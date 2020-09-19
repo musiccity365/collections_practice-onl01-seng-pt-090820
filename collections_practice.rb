@@ -36,6 +36,6 @@ end
 
 def add_s(array)
   array.collect.with_index {|word, index|
-    index
+    index == 1 ? word : word + "s"
   }
 end
